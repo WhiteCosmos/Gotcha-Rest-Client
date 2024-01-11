@@ -6,7 +6,7 @@ const ENVIRONMENTS = {
     PRODUCTION: "PRODUCTION"
 }
 
-let environment = ENVIRONMENTS.ALPHA
+let environment = ENVIRONMENTS.PRODUCTION
 
 let AppConfig = {
     isProduction() {

@@ -12,14 +12,6 @@
 
         <v-spacer></v-spacer>
 
-        <div class="ev-row app-ad-container">
-            <ev-square-tag>Ad</ev-square-tag>
-
-            <ev-vertical-gutter :gutter="8"></ev-vertical-gutter>
-
-            <a class="app-ad-container__label" href="https://apps.apple.com/cn/app/id6450109182">背单词，就嗯背</a>
-        </div>
-
         <ev-app-manager-panel></ev-app-manager-panel>
 
         <ev-vertical-gutter :gutter="8"></ev-vertical-gutter>
@@ -34,7 +26,7 @@
 
         <ev-vertical-gutter :gutter="16"></ev-vertical-gutter>
 
-        <!-- 导出文档 -->
+        <!-- Export Modal -->
 
         <v-dialog v-bind="export_dialog_config" v-model="showExportDialog">
             <ev-project-export-modal_
@@ -113,14 +105,6 @@ export default {
     ],
 
     computed: {
-        canRefreshProject() { // 示例项目不展示按钮
-            return this.currentProject && this.currentProject.id !== 1 && !this.isSwaggerProject
-        },
-
-        purchaseDialog() {
-            // return this.$store.state.subscription.showPurchaseDialog
-        },
-
         hotkey() {
             return {
                 'esc': this.closeExportDialog
@@ -195,28 +179,6 @@ export default {
     border-bottom: 1px solid #e0e0e0;
 
     -webkit-app-region: drag;
-}
-
-.app-ad-container {
-    display: flex;
-
-    align-items: center;
-
-    //height: 50px;
-
-    padding-left: 16px;
-
-    padding-right: 16px;
-
-    &__label {
-        font-size: 13px;
-
-        font-weight: light;
-
-        color: $SECONDARY_FONT_COLOR;
-
-        padding-top: 1px;
-    }
 }
 
 .export-button {
