@@ -1,0 +1,130 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-export__column {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    user-select: none;
+
+    overflow: hidden;
+
+    background-color: #FAFAFA;
+
+    border-right: 1px solid #EAEAEA;
+}
+
+.ev-export__item {
+    padding-left: 8px; // 给箭头留出空间
+
+    display: flex;
+
+    height: 56px;
+
+    align-items: center;
+
+    transition: 80ms;
+
+    &:hover {
+        background-color: #F1F1F1;
+    }
+}
+
+.ev-export__indicator {
+    width: 16px;
+
+    height: 16px;
+
+    transform: scale(.8);
+
+    display: flex;
+
+    justify-content: left;
+
+    align-items: center;
+}
+
+.ev-export__icon {
+    width: 24px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.ev-export__extension {
+    width: 56px;
+
+    height: 16px;
+
+    @include full-center;
+}
+
+.ev-export__body {
+    padding-left: 8px;
+
+    height: 56px;
+
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.scroll-container {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: auto;
+
+    height: 480px
+}
+
+// Custom Scroll Bar
+
+///* width */
+//::-webkit-scrollbar {
+//    width: 10px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//    width: 10px;
+//
+//    //background-color: #FCFCFC;
+//    background-color: #f9f9f9;
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//    border: 2px solid #FCFCFC;
+//
+//    width: 6px;
+//
+//    background: #C8C8C8;
+//
+//    border-radius: 8px;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//    background: #b3b3b3;
+//}
+
+.magic {
+    position: absolute;
+
+    left: calc(320px - 3px);
+
+    //background-color: #ff8282;
+}

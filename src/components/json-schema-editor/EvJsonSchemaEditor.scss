@@ -1,0 +1,124 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-json-schema-editor {
+    &__json-node-wrapper {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        height: 28px;
+
+        user-select: none;
+    }
+
+    &__json-node {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+
+        height: 16px;
+
+        padding-left: 16px;
+
+        padding-right: 4px;
+
+        &__drag-widget {
+            @include full-center;
+
+            width: 24px;
+
+            height: 16px;
+        }
+
+        &__drag-handler {
+            @include full-center;
+
+            position: absolute;
+
+            left: 2px;
+
+            width: 16px;
+
+            height: 16px;
+        }
+
+        &__widget {
+            @include full-center;
+
+            width: 16px;
+
+            height: 28px;
+        }
+
+        &__key {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            flex: 3;
+
+            //background-color: #FF8282;
+        }
+
+        &__type {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 48px;
+
+            //background-color: #FF8282;
+        }
+
+        &__value {
+            display: flex;
+
+            align-items: center;
+
+            flex: 4;
+        }
+    }
+}
+
+.ev-json-node {
+    .arrow-indicator {
+        display: flex;
+
+        align-self: flex-end;
+
+        position: absolute;
+
+        width: 16px;
+
+        height: calc(100% - 22px);
+
+        border-left: 1px dotted #E0E0E0;
+    }
+
+    &__guide-line {
+        position: absolute;
+
+        width: 1px;
+
+        height: 100%;
+
+        //border-left: 1px dotted #E0E0E0;
+        border-left: 1px solid #EAEAEA;
+
+        &--mouse-enter {
+            border-left: 1px solid #007AFF;
+        }
+
+        &--mouse-leave {
+            border-left: 1px dotted #E0E0E0;
+        }
+    }
+}

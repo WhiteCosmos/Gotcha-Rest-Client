@@ -1,0 +1,63 @@
+import Vue
+    from 'vue'
+
+export const EvLocalRepositoryEventBus = new Vue()
+
+export const EvLocalRepositoryEvents = {
+    // Life Circle
+
+    REPOSITORY_INIT_START: "REPOSITORY_INIT_START",
+
+    REPOSITORY_INIT_COMPLETE: "REPOSITORY_INIT_START",
+
+
+    SELECT_METHOD: "SELECT_METHOD",
+
+    SELECT_STRUCT: "SELECT_STRUCT",
+
+    // Repository
+
+    REPOSITORY_SWITCH: "REPOSITORY_SWITCH",
+
+    REPOSITORY_CREATE: "REPOSITORY_CREATE",
+
+    // Project
+
+    PROJECT_SWITCH: "PROJECT_SWITCH",
+
+    PROJECT_CREATE: "PROJECT_CREATE",
+
+    PROJECT_DELETE: "PROJECT_DELETE",
+
+    // Branch
+
+    BRANCH_SWITCH: "BRANCH_SWITCH",
+
+    BRANCH_CREATE: "BRANCH_CREATE",
+
+    BRANCH_REFRESH: "BRANCH_REFRESH",
+
+    BRANCH_DELETE: "BRANCH_DELETE",
+
+    // Module
+
+    MODULE_SWITCH: "MODULE_SWITCH",
+
+    TREE_VIEW_SWITCH: "TREE_VIEW_SWITCH",
+
+    LOCAL_REPOSITORY_EVENTS: [ // Cannot use 'this'
+        'REPOSITORY_SWITCH',
+        'REPOSITORY_CREATE',
+
+        'PROJECT_SWITCH',
+        'PROJECT_CREATE',
+        'PROJECT_DELETE',
+
+        'BRANCH_SWITCH',
+        'BRANCH_CREATE',
+        'BRANCH_REFRESH',
+        'BRANCH_DELETE',
+
+        'MODULE_SWITCH',
+    ]
+}

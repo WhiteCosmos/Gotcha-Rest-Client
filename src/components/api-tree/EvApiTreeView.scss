@@ -1,0 +1,49 @@
+@import "~@/styles/rabiapi.scss";
+
+.tree-view-node-wrapper {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.tree-view-node {
+    width: 100%;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 16px;
+
+    padding-right: 16px;
+
+    &__expand-icon {
+        height: 16px;
+
+        width: 16px;
+
+        @include full-center;
+    }
+
+    &__folder-icon {
+        height: 16px;
+
+        width: 16px;
+
+        @include full-center;
+
+        //margin-right: 4px;
+    }
+
+    &__label {
+        font-size: 11px;
+
+        line-height: 16px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,148 @@
+/**
+ * 布局相关属性
+ */
+
+// 标题栏高度
+
+$TITLE_BAR_HEIGHT: 88px;
+
+// 标题栏宽度
+
+$TITLE_BAR_WIDTH: 100%;
+
+// 侧边栏高度
+
+$SIDE_BAR_HEIGHT: calc(100vh - #{$TITLE_BAR_HEIGHT});
+
+// 侧边栏宽度
+
+$SIDE_BAR_WIDTH: 320px;
+
+// 内容宽度
+
+$CONTENT_WIDTH: 100%;
+
+// 内容高度
+
+$CONTENT_HEIGHT: calc(100vh - #{$TITLE_BAR_WIDTH});
+
+/**
+ * 侧边栏相关属性
+ */
+
+// 工具栏高度
+
+$TOOL_CONTAINER_HEIGHT: 40px;
+
+// 工具栏内边距
+
+$TOOL_CONTAINER_PADDING: 8px 0px 0px 8px;
+
+// Java Service 展示栏高度
+
+$SERVICE_NODE_HEIGHT: 56px;
+
+// Java Method 展示栏高度
+
+$METHOD_NODE_HEIGHT: 56px;
+
+// Java Struct 展示栏高度
+
+$STRUCT_NODE_HEIGHT: 56px;
+
+
+/**
+ * 其它属性
+ */
+
+$ICON_SIZE: 28px;
+
+$BORDER_RADIUS: 5px;
+
+@mixin border-radius-upside {
+  border-radius: $BORDER_RADIUS $BORDER_RADIUS 0 0;
+}
+
+@mixin border-radius-downside {
+  border-radius: 0 0 $BORDER_RADIUS $BORDER_RADIUS;
+}
+
+@mixin border-radius-right-side {
+  border-radius: 0 $BORDER_RADIUS $BORDER_RADIUS 0;
+}
+
+@mixin has-radius {
+  border-radius: $BORDER_RADIUS;
+}
+
+.ev-center {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+@mixin full-center {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 1px;
+
+    min-height: 1px;
+
+    flex-shrink: 0;
+}
+
+@mixin direction-row {
+
+}
+
+@mixin direction-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+@mixin flex-column {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 1px;
+
+    min-height: 1px;
+}
+
+@mixin flex-row {
+    display: flex;
+
+    flex-direction: row;
+
+    min-width: 1px;
+
+    min-height: 1px;
+}
+
+@mixin vertical-center {
+    display: flex;
+
+    justify-content: center;
+
+    min-width: 1px;
+
+    min-height: 1px;
+}
+
+@mixin horizon-center {
+    display: flex;
+
+    align-items: center;
+
+    min-width: 1px;
+
+    min-height: 1px;
+}

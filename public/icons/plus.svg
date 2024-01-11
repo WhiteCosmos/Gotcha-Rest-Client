@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Plus Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon" transform="translate(-9.000000, -7.000000)">
+            <g id="Plus-Icon" transform="translate(9.000000, 7.000000)">
+                <circle id="Oval" stroke="#007AFF" stroke-width="4" cx="32" cy="32" r="30"></circle>
+                <path d="M32,16 C33.1045695,16 34,16.8954305 34,18 L34,28 C34,29.1045695 34.8954305,30 36,30 L46,30 L46,30 C47.1045695,30 48,30.8954305 48,32 C48,33.1045695 47.1045695,34 46,34 L36,34 C34.8954305,34 34,34.8954305 34,36 L34,46 L34,46 C34,47.1045695 33.1045695,48 32,48 C30.8954305,48 30,47.1045695 30,46 L30,36 C30,34.8954305 29.1045695,34 28,34 L18,34 L18,34 C16.8954305,34 16,33.1045695 16,32 C16,30.8954305 16.8954305,30 18,30 L28,30 C29.1045695,30 30,29.1045695 30,28 L30,18 L30,18 C30,16.8954305 30.8954305,16 32,16 Z"
+                      id="Path" fill="#007AFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

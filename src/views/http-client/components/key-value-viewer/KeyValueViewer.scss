@@ -1,0 +1,15 @@
+@import "~@/styles/rabiapi.scss";
+
+$KEY_VALUE_VIEWER_PADDING_LEFT: 16px;
+
+$KEY_VALUE_VIEWER_PADDING_RIGHT: 16px;
+
+.key-value-viewer-column {
+    display: flex;
+
+    align-items: center;
+
+    flex: 1;
+}
+
+

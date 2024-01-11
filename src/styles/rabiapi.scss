@@ -1,0 +1,139 @@
+@import "~@/components/style/_shape.scss";
+
+@import "~@/components/style/color.scss";
+
+@import "~@/components/style/font.scss";
+
+@import "~@/components/style/layout.scss";
+
+@import "~@/components/style/animation.scss";
+
+@import "~@/styles/sidebar.scss";
+
+@import "~@/styles/modal.scss";
+
+//$PRIMARY_FONT_COLOR: #626a73;
+
+//$SECONDARY_FONT_COLOR: #77828c;
+
+.tab-font-style {
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+// Layout
+
+$APP_NAVIGATION_HEIGHT: 48px;
+
+$MODULE_SELECTOR_HEIGHT: 32px;
+
+$TAB_SELECTOR_HEIGHT: 48px;
+
+$TREE_TOOLS_HEIGHT: 32px;
+
+$TREE_FILTER_HEIGHT: 40px;
+
+$REFERENCE_FONT_COLOR: #AABBCC;
+
+.clickable {
+
+}
+
+@mixin selector-background-style {
+    background: white;
+
+    box-shadow: 1px 1px 8px -5px #A2B5C9;
+
+    border-radius: 5px;
+
+    border: 1px solid #66adff;
+}
+
+// Font Style
+
+.reference {
+    font-size: 10px;
+
+    line-height: 12px;
+
+    font-weight: bold;
+
+    color: $REFERENCE_FONT_COLOR;
+}
+
+// Color
+
+$SHADOW_COLOR: #C2C7CC; // 阴影颜色
+
+$BORDER_COLOR: #D8D8D8; // 选择器边框颜色
+
+$DIVIDER_COLOR: #D5D5D5; // v-divider 分隔线颜色
+
+$MAIN_BACKGROUND_PRIMARY_COLOR: #D9D9D9; // 灰度背景色深色调
+
+$MAIN_BACKGROUND_SECONDARY_COLOR: #F2F2F2; // 灰度背景色浅色调
+
+@mixin main-background-gradient {
+    background: linear-gradient(0deg, $MAIN_BACKGROUND_PRIMARY_COLOR 0%, $MAIN_BACKGROUND_SECONDARY_COLOR 100%);
+}
+
+@mixin grey-background-gradient {
+    background: linear-gradient(0deg, #D8D8D8 0%, #EAEAEA 100%);
+}
+
+$BLUE_BACKGROUND_PRIMARY_COLOR: #007AFF; // 蓝色背景色深色调
+
+$BLUE_BACKGROUND_SECONDARY_COLOR: #00B2FF; // 蓝色背景色浅色调
+
+@mixin blue-background-gradient {
+    background: linear-gradient(0deg, $BLUE_BACKGROUND_PRIMARY_COLOR 0%, $BLUE_BACKGROUND_SECONDARY_COLOR 100%);
+}
+
+@mixin blue-background-gradient--horizontal {
+    background: linear-gradient(90deg, $BLUE_BACKGROUND_PRIMARY_COLOR 0%, $BLUE_BACKGROUND_SECONDARY_COLOR 100%);
+}
+
+// Selector Style
+
+.selector-common-style {
+    border-radius: 5px;
+
+    border: 1px solid $BORDER_COLOR;
+
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+
+    box-shadow: 0 2px 4px -2px $SHADOW_COLOR;
+}
+
+.selector-common-style-2 {
+    border-radius: 5px;
+
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+
+    box-shadow: 0 2px 4px -2px $SHADOW_COLOR;
+}
+
+.ev-center {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.vertical-center {
+    display: flex;
+
+    justify-content: center;
+}
+
+.horizon-center {
+    display: flex;
+
+    align-items: center;
+}
+
+.scroll-y {
+    overflow-y: scroll;
+}

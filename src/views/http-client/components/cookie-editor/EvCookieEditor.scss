@@ -1,0 +1,29 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-cookie-editor {
+    &__name-column {
+        display: flex;
+
+        align-items: center;
+
+        flex: 3;
+    }
+
+    &__status-column {
+        @include full-center;
+
+        width: 28px;
+
+        height: 28px;
+    }
+
+    &__value-column {
+        display: flex;
+
+        flex: 4;
+
+        align-items: center;
+
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,29 @@
+@import "~@/styles/rabiapi.scss";
+
+.api-definition-block {
+    display: flex;
+
+    min-height: 128px;
+
+    flex-direction: column;
+}
+
+.api-title-blockk {
+    display: flex;
+
+    min-height: 80px;
+
+    flex-direction: column;
+}
+
+.example-pre {
+    background-color: #FAFAFA;
+
+    font-size: 12px;
+
+    line-height: 20px;
+
+    color: $SECONDARY_FONT_COLOR;
+
+    padding: 16px;
+}

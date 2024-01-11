@@ -1,0 +1,111 @@
+/**
+ * 颜色配置
+ */
+
+// 应用主色调
+
+$PRIMARY_COLOR: #007AFF;
+
+// 应用次色调
+
+$SECONDARY_COLOR: #4DA2FF;
+
+// 应用阴影颜色
+
+$SHADOW_COLOR: #c2c7cc;
+
+// 通用背景灰色
+
+$BACKGROUND_COLOR: #FAFAFA;
+
+$SECONDARY_BACKGROUND_COLOR: #F2F2F2;
+
+$MENU_BACKGROUND_COLOR: #F2F8FF;
+
+$COMMON_BACKGROUND_COLOR: #FAFAFA;
+
+$PRIMARY_BORDER_COLOR: #E0E0E0;
+
+$SECONDARY_BORDER_COLOR: #EAEAEA;
+
+$DARKER_BACKGROUND_COLOR: #AABBCC;
+
+$SELECTOR_BACKGROUND_COLOR: #e6ecf2;
+
+// Modal
+
+$MODAL_TITLE_COLOR: #EAEAEA;
+
+$MODAL_DIVIDER_COLOR: #E0E0E0;
+
+// 分隔线颜色 深色
+
+$DIVIDER_COLOR_1: #CCCCCC;
+
+// 分隔线颜色 浅色
+
+$DIVIDER_COLOR_2: #E0E0E0;
+
+// 占位符颜色
+
+$PLACEHOLDER_COLOR: #AABBCC;
+
+// hover
+
+$LIGHT_HOVER_COLOR: #e6ecf2;
+
+// 主色调渐变
+
+@mixin blue-background-gradient {
+    background: linear-gradient(0deg, $PRIMARY_COLOR 0%, $SECONDARY_COLOR 100%);
+}
+
+// 背景灰度渐变
+
+$MAIN_BACKGROUND_PRIMARY_COLOR: #D9D9D9; // 灰度背景色深色调
+
+$MAIN_BACKGROUND_SECONDARY_COLOR: #F2F2F2; // 灰度背景色浅色调
+
+@mixin main-background-gradient {
+    background: linear-gradient(0deg, $MAIN_BACKGROUND_PRIMARY_COLOR 0%, $MAIN_BACKGROUND_SECONDARY_COLOR 100%);
+}
+
+// 白色灰度渐变
+
+@mixin white-background-gradient {
+    background: linear-gradient(0deg, #FAFAFA 0%, #FFFFFF 100%);
+}
+
+
+$GREEN_COLOR: #9acc68;
+
+$GREEN_BACKGROUND_COLOR: #f8fff2;
+
+$RED_COLOR: #FF8282;
+
+$RED_BACKGROUND_COLOR: #fff2f2;
+
+$YELLOW_COLOR: #ffdc42;
+
+$ORANGE_COLOR: #f3ab3e;
+
+$PURPLE_COLOR: #8f70cc;
+
+// TODO Apple Color
+
+$SYSTEM_BLUE_DARK: #0084FF;
+
+$SYSTEM_BLUE_LIGHT: #0A7AFF;
+
+$SYSTEM_GREEN_DARK: #32d74b;
+
+$SYSTEM_GREEN_LIGHT: #0A7AFF;
+
+$SYSTEM_RED_DARK: #ff453a;
+
+$SYSTEM_RED_LIGHT: #0A7AFF;
+
+$SYSTEM_PINK_LIGHT: #0A7AFF;
+
+$SYSTEM_PINK_LIGHT: #0A7AFF;
+

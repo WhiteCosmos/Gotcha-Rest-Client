@@ -1,0 +1,156 @@
+/**
+ * 所有弹窗相关样式
+ */
+@import "../components/style/common";
+
+$MODAL_WIDTH: 720px; // 弹窗宽度
+
+$MODAL_TITLE_HEIGHT: 48px; // 弹窗标题高度
+
+// 创建项目时弹窗
+
+.modal__registry {
+    height: calc(100vh - 240px);
+
+    max-height: 720px;
+
+    background-color: #F2F2F2;
+
+    border: 1px solid $DIVIDER_COLOR_1;
+}
+
+.modal__export {
+    height: 640px;
+
+    background-color: #F2F2F2;
+
+    border: 1px solid $DIVIDER_COLOR_1;
+}
+
+// 弹窗标题样式
+
+.modal__title {
+    @include main-background-gradient;
+
+    @include border-radius-upside;
+
+    @include full-center;
+
+    user-select: none;
+
+    width: 100%;
+
+    height: $MODAL_TITLE_HEIGHT;
+
+    border-bottom: 1px solid $DIVIDER_COLOR_1;
+}
+
+.modal__title__font {
+    font-size: $MIDDLE_FONT_SIZE;
+
+    font-weight: bold;
+
+    color: $SECONDARY_FONT_COLOR;
+
+    text-align: center;
+}
+
+.modal__content {
+    overflow-y: overlay;
+}
+
+.modal__action {
+    @include full-center;
+
+    width: 100%;
+
+    height: $MODAL_TITLE_HEIGHT;
+
+    border-top: 1px solid $DIVIDER_COLOR_2;
+}
+
+.modal__action__right {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    width: 100%;
+
+    height: $MODAL_TITLE_HEIGHT;
+
+    border-top: 1px solid $DIVIDER_COLOR_2;
+
+    padding-right: 8px;
+}
+
+.ev-960-modal {
+    display: flex;
+
+    overflow: hidden;
+
+    background-color: #FCFCFC;
+
+    width: 960px;
+
+    height: 640px;
+
+    user-select: none;
+
+    &__navigator {
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 100%;
+
+        height: 40px;
+
+        border-bottom: 1px solid $MODAL_DIVIDER_COLOR;
+
+        background-color: $MODAL_TITLE_COLOR;
+    }
+
+    &__sidebar {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 240px;
+
+        height: 100%;
+
+        background-color: #FAFAFA;
+
+        border-right: 1px solid #E0E0E0;
+    }
+
+    &__tree-view {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        height: calc(100% - 40px);
+
+        overflow-y: scroll;
+    }
+
+    &__content {
+        display: flex;
+
+        flex-direction: column;
+
+        flex: 1;
+
+        height: 100%;
+
+        overflow: hidden;
+    }
+}

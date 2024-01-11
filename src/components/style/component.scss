@@ -1,0 +1,159 @@
+/**
+ * 组件相关设置
+ */
+
+@import "src/components/style/color";
+
+@import "src/components/style/layout";
+
+@import "src/components/style/font";
+
+/**
+ * 选择框
+ */
+@mixin mac-shadow {
+    box-shadow: 0 1px 2px -1px $SHADOW_COLOR;
+}
+
+@mixin component-shadow {
+    box-shadow: 0 1px 2px -1px $SHADOW_COLOR;
+    //box-shadow: 0 2px 4px -2px $SHADOW_COLOR;
+}
+
+@mixin none-shadow {
+    box-shadow: none;
+}
+
+// 选择器
+
+$SELECTOR_HEIGHT: 28px;
+
+.ev-selector {
+    @include white-background-gradient;
+
+    @include component-shadow;
+
+    height: $SELECTOR_HEIGHT;
+
+    border-radius: $BORDER_RADIUS;
+
+    display: flex;
+
+    flex: 1;
+
+    align-items: center;
+
+    user-select: none;
+
+    &--borderless {
+        border: 1px solid transparent;
+    }
+
+    &--border {
+        border: 1px solid $SECONDARY_COLOR;
+    }
+}
+
+.ev-selector__font {
+    font-size: $SMALL_FONT_SIZE;
+
+    font-weight: bold;
+
+  color: $SECONDARY_FONT_COLOR;
+
+    line-height: 28px;
+}
+
+.ev-selector__indicator {
+    @include blue-background-gradient;
+
+    @include border-radius-right-side;
+
+    @include full-center;
+
+    width: $SELECTOR_HEIGHT;
+
+    height: $SELECTOR_HEIGHT;
+}
+
+$TOOL_BUTTON_SIZE: 28px;
+
+// 工具栏按钮
+
+.ev-tool-button {
+    @include full-center;
+
+    //min-width: $TOOL_BUTTON_SIZE;
+
+    //height: $TOOL_BUTTON_SIZE;
+
+    border-radius: $BORDER_RADIUS;
+
+    & {
+        @include white-background-gradient;
+
+        @include component-shadow;
+    }
+
+    &--click {
+        background: $COMMON_BACKGROUND_COLOR;
+
+        @include none-shadow;
+    }
+}
+
+// 列表框
+
+$LIST_PANEL_HEIGHT: 32px;
+
+$LIST_PANEL_PADDING: 16px;
+
+.ev-list-panel {
+    @include has-radius;
+
+    @include component-shadow;
+
+    @include flex-column;
+}
+
+.ev-list-panel__title {
+    @include horizon-center;
+
+    @include blue-background-gradient;
+
+    @include border-radius-upside;
+
+    height: $LIST_PANEL_HEIGHT;
+
+    padding-left: $LIST_PANEL_PADDING;
+}
+
+.ev-list-panel__title__font {
+    font-size: $SMALL_FONT_SIZE;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.ev-list-panel__item {
+    @include horizon-center;
+
+    min-height: $LIST_PANEL_HEIGHT;
+
+    padding-left: $LIST_PANEL_PADDING;
+
+    padding-right: $LIST_PANEL_PADDING;
+
+    &:nth-child(odd) {
+        background-color: $COMMON_BACKGROUND_COLOR;
+    }
+
+    &:nth-child(even) {
+        background-color: #F5F5F5;
+    }
+
+    &:nth-child(n) {
+        @include border-radius-downside;
+    }
+}

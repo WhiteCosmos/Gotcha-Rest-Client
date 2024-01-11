@@ -1,0 +1,79 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-key-value-assertion-editor {
+    &__name-column {
+        display: flex;
+
+        align-items: center;
+
+        flex-shrink: 0;
+
+        width: 196px;
+    }
+
+    &__condition-column {
+        display: flex;
+
+        align-content: center;
+
+        width: 28px;
+    }
+
+    &__value-column {
+        display: flex;
+
+        flex: 1;
+
+        align-items: center;
+
+        padding-left: 4px;
+
+        flex-shrink: 0;
+    }
+}
+
+.ev-key-value-assertion-viewer {
+    &__name-column {
+        display: flex;
+
+        align-items: center;
+
+        flex-shrink: 0;
+
+        width: 196px;
+    }
+
+    &__condition-column {
+        display: flex;
+
+        align-content: center;
+
+        justify-content: center;
+
+        width: 56px;
+
+        //background-color: #FF8282;
+    }
+
+    &__value-column {
+        display: flex;
+
+        word-break: break-all;
+
+        white-space: break-spaces;
+
+        flex: 1;
+
+        align-items: center;
+
+        flex-shrink: 0;
+
+        padding-top: 4px;
+
+        padding-left: 4px;
+
+        //background-color: #FF8282;
+
+        //opacity: 0.5;
+    }
+}

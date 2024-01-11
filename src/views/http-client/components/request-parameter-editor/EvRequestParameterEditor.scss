@@ -1,0 +1,29 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-request-parameter-editor {
+    &__name-column {
+        display: flex;
+
+        align-items: center;
+
+        flex: 3;
+    }
+
+    &__name-column-2 {
+        display: flex;
+
+        align-items: center;
+
+        flex-shrink: 0;
+
+        width: 218px;
+    }
+
+    &__value-column {
+        display: flex;
+
+        align-items: center;
+
+        flex: 4;
+    }
+}

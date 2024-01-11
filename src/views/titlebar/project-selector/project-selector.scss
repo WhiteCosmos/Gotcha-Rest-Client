@@ -1,0 +1,24 @@
+@import "~@/styles/rabiapi.scss";
+
+.project-selector-menu {
+    width: 320px;
+
+    background-color: rgb(242, 242, 242);
+
+    user-select: none;
+
+    //max-height: calc(100vh - 480px);
+}
+
+.branch-selector-menu {
+  width: 240px;
+
+  background-color: rgb(242, 242, 242);
+
+  user-select: none;
+}
+
+.filter-container {
+  padding: 8px 8px 0px 8px;
+}
+

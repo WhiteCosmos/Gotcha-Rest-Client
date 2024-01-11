@@ -1,0 +1,25 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-export-tree-view-node {
+    display: flex;
+
+    align-items: center;
+
+    height: 28px;
+
+    &__icon {
+        @include full-center;
+
+        width: 12px;
+
+        height: 28px;
+    }
+
+    &__block {
+        @include full-center;
+
+        width: 20px;
+
+        height: 28px;
+    }
+}

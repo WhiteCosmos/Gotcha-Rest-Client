@@ -1,0 +1,51 @@
+<template>
+    <div class="round-tag">
+        <span class="round-tag__font"><slot></slot></span>
+    </div>
+</template>
+
+<script>
+    import EvComponentMixin from '@/mixins/EvComponentMixin'
+
+    export default {
+        name: "EvRecursiveTag",
+
+        mixins: [
+            EvComponentMixin
+        ],
+
+        props: {}
+    }
+</script>
+
+<style lang="scss" scoped>
+    @import "~@/styles/rabiapi.scss";
+
+    .round-tag {
+        height: 16px;
+
+        padding-left: 4px;
+
+        padding-right: 4px;
+
+        user-select: none;
+
+        border-radius: 3px;
+
+        display: flex;
+
+        align-items: center;
+
+        background-color: #fffaf2;
+    }
+
+    .round-tag__font {
+        font-size: 10px;
+
+        line-height: 12px;
+
+        font-weight: 500;
+
+        color: $ORANGE_COLOR;
+    }
+</style>

@@ -1,0 +1,21 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-json-schema-properties-panel {
+    display: flex;
+
+    flex-direction: column;
+
+    &__row {
+        display: flex;
+
+        align-items: center;
+
+        height: 24px;
+
+        width: 288px;
+
+        padding-left: 8px;
+
+        padding-right: 8px;
+    }
+}

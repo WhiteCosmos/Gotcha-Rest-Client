@@ -1,0 +1,77 @@
+@import "~@/styles/rabiapi.scss";
+
+.column-block {
+    min-height: 27px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.column-block-title {
+    width: 56px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    line-height: 16px;
+
+    user-select: none;
+
+    padding-left: 4px;
+
+    padding-right: 4px;
+
+    border-radius: 2px;
+
+    height: 16px;
+
+    &__example {
+        background: #f2f8ff;
+
+        color: $SECONDARY_COLOR;
+    }
+
+    &__default {
+        background: #fffaf2;
+
+        color: $ORANGE_COLOR;
+    }
+}
+
+.column-block-value {
+    word-break: break-word;
+
+    font-size: 10px;
+
+    font-weight: bolder;
+
+    color: $SECONDARY_FONT_COLOR;
+
+    line-height: 16px;
+
+    background: #F1F1F1;
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+
+    border-radius: 2px;
+}
+
+.column-block-summary {
+    word-break: break-word;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    color: $SECONDARY_FONT_COLOR;
+
+    line-height: 20px;
+
+    padding-top: 4px;
+
+    padding-bottom: 4px;
+}

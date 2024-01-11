@@ -1,0 +1,135 @@
+.cm-s-gotcha.CodeMirror {
+    background: #FFF;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    color: #333;
+}
+
+.cm-s-gotcha .CodeMirror-wrap pre {
+    font-family: Courier, serif;
+
+    word-break: break-all;
+}
+
+.cm-s-gotcha div.CodeMirror-selected {
+    /*background: #e0e0e0;*/
+    background-color: #B4D5FE;
+}
+
+.cm-s-gotcha .CodeMirror-line::selection, .cm-s-gotcha .CodeMirror-line > span::selection, .cm-s-gotcha .CodeMirror-line > span > span::selection {
+    background: #b8cee6;
+}
+
+.cm-s-gotcha .CodeMirror-line::-moz-selection, .cm-s-gotcha .CodeMirror-line > span::-moz-selection, .cm-s-gotcha .CodeMirror-line > span > span::-moz-selection {
+    background: #b8cee6;
+}
+
+.cm-s-gotcha .CodeMirror-gutters {
+    background: #FAFAFA;
+
+    border-right: 1px solid #F1F1F1;
+}
+
+.cm-s-gotcha .CodeMirror-guttermarker {
+    color: #ac4142;
+}
+
+.cm-s-gotcha .CodeMirror-guttermarker-subtle {
+    color: #b0b0b0;
+}
+
+.cm-s-gotcha .CodeMirror-linenumber {
+    font-size: 10px;
+
+    color: #999;
+}
+
+.cm-s-gotcha .CodeMirror-cursor {
+    border-left: 1px solid #AABBCC;
+}
+
+.cm-s-gotcha span {
+    font-family: Courier, serif;
+}
+
+.cm-s-gotcha span.cm-comment {
+    color: #8f5536;
+}
+
+.cm-s-gotcha span.cm-atom {
+    /*color: #aa759f;*/
+    color: #333;
+}
+
+.cm-s-gotcha span.cm-number {
+    /*color: #aa759f;*/
+    color: orange;
+}
+
+.cm-s-gotcha span.cm-property, .cm-s-gotcha span.cm-attribute {
+    color: #714080;
+}
+
+.cm-s-gotcha span.cm-keyword {
+    color: #ac4142;
+}
+
+.cm-s-gotcha span.cm-string {
+    color: #829951;
+
+    word-break: break-all;
+}
+
+span.cm-string:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.cm-s-gotcha span.cm-string.cm-property {
+    color: #714080;
+}
+
+.cm-s-gotcha span.cm-variable {
+    color: #cca062;
+}
+
+.cm-s-gotcha span.cm-variable-2 {
+    color: #6a9fb5;
+}
+
+.cm-s-gotcha span.cm-def {
+    color: #d28445;
+}
+
+.cm-s-gotcha span.cm-bracket {
+    color: #202020;
+}
+
+.cm-s-gotcha span.cm-tag {
+    color: #ac4142;
+}
+
+.cm-s-gotcha span.cm-link {
+    color: #aa759f;
+}
+
+.cm-s-gotcha span.cm-error {
+    background: #ac4142;
+    color: #505050;
+}
+
+.cm-s-gotcha span.cm-searching {
+    background: rgba(255, 220, 66, 0.8);
+}
+
+.cm-s-gotcha .CodeMirror-activeline-background {
+    background: #F5F5F5;
+}
+
+.cm-s-gotcha .CodeMirror-matchingbracket {
+    color: black !important;
+    background-color: #ffb442 !important
+}

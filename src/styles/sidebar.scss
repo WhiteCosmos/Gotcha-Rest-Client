@@ -1,0 +1,189 @@
+@import "../components/style/common";
+
+// 服务和方法每行高度
+
+$SIDEBAR_ROW_HEIGHT: 56px;
+
+// 方法展开时的背景色
+
+$SIDEBAR_METHOD_BACKGROUND_COLOR: #F5F5F5;
+
+/**
+ * 侧边栏服务与方法展示区域
+ */
+
+.sidebar__services {
+  user-select: none;
+
+  width: 100%;
+
+  height: calc(100vh - #{$TITLE_BAR_HEIGHT} - #{$TOOL_CONTAINER_HEIGHT} * 3);
+
+  background-color: $COMMON_BACKGROUND_COLOR;
+
+  overflow-y: overlay;
+}
+
+// 侧边栏服务名称展示区域
+
+.sidebar__service {
+  @include flex-column;
+
+  &--selected {
+    border-bottom: 1px solid $DIVIDER_COLOR_2;
+  }
+
+  &--fold {
+
+  }
+}
+
+.sidebar__service-container {
+  height: $SIDEBAR_ROW_HEIGHT;
+
+  @include horizon-center;
+}
+
+// 折叠箭头展示区域
+
+.sidebar__service-icon {
+  width: 16px;
+
+  height: 16px;
+
+  @include full-center
+}
+
+.sidebar__method {
+  @include horizon-center;
+
+  height: $SIDEBAR_ROW_HEIGHT;
+
+  background-color: $SIDEBAR_METHOD_BACKGROUND_COLOR;
+}
+
+.sidebar__node-indicator-container {
+  @include full-center;
+
+  width: 40px;
+
+  height: 40px;
+
+  padding-left: 6px; // 为了与其它图标对齐
+}
+
+.sidebar__node-indicator {
+  width: 4px;
+
+  height: 12px;
+
+  border-radius: 4px;
+
+  background-color: $PRIMARY_COLOR;
+
+  transform: scale(.8);
+
+  box-shadow: 0px 1px 4px -2px #C2C7CC;
+}
+
+/**
+ * 侧边栏字体相关设置
+ */
+
+// 侧边栏节点行高
+
+$SIDEBAR_LINE_HEIGHT: 24px;
+
+// 侧边栏节点最大宽度
+
+$SIDEBAR_ROW_WIDTH: 80%;
+
+$SIDEBAR_TRANSITION: all 80ms;
+
+$SIDEBAR_METHOD_COMMENT_COLOR: #B5B5B5;
+
+$SIDEBAR_METHOD_COMMENT_HOVER: #1A88FF;
+
+.sidebar__service-name {
+  font-size: $MIDDLE_FONT_SIZE;
+
+  line-height: $SIDEBAR_LINE_HEIGHT;
+
+  font-weight: bold;
+
+  width: $SIDEBAR_ROW_WIDTH;
+
+  & {
+    color: $PRIMARY_FONT_COLOR;
+  }
+
+  &--selected {
+    color: $PRIMARY_COLOR;
+  }
+}
+
+.sidebar__service-comment {
+  font-size: $SMALL_FONT_SIZE;
+
+  line-height: $SIDEBAR_LINE_HEIGHT;
+
+  font-weight: bold;
+
+  width: $SIDEBAR_ROW_WIDTH;
+
+  & {
+    color: $SECONDARY_FONT_COLOR;
+  }
+
+  &--selected {
+    color: $PRIMARY_COLOR;
+  }
+}
+
+.sidebar__method-name {
+  font-size: $MIDDLE_FONT_SIZE - 1px;
+
+  line-height: $SIDEBAR_LINE_HEIGHT;
+
+  font-weight: bold;
+
+  width: $SIDEBAR_ROW_WIDTH;
+
+  & {
+    color: $SECONDARY_FONT_COLOR;
+  }
+
+  &--hovered {
+    color: $PRIMARY_COLOR;
+  }
+
+  &--selected {
+    color: $PRIMARY_COLOR;
+  }
+
+  &--deprecated {
+    text-decoration: line-through;
+  }
+}
+
+.sidebar__method-comment {
+  font-size: $SMALL_FONT_SIZE;
+
+  line-height: $SIDEBAR_LINE_HEIGHT;
+
+  font-weight: normal;
+
+  color: $SIDEBAR_METHOD_COMMENT_COLOR;
+
+  transition: $SIDEBAR_TRANSITION;
+
+  width: $SIDEBAR_ROW_WIDTH;
+
+  &--hovered {
+    color: $SIDEBAR_METHOD_COMMENT_HOVER;
+  }
+
+  &--selected {
+    color: $PRIMARY_COLOR;
+  }
+}

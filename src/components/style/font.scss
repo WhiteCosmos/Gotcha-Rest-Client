@@ -1,0 +1,89 @@
+/**
+ * 字体相关属性
+ */
+
+@import "src/components/style/color";
+
+/*
+ * 通用字体
+ */
+
+$SMALL_FONT_SIZE: 12px;
+
+$MIDDLE_FONT_SIZE: 14px;
+
+$PRIMARY_FONT_COLOR: #333;
+
+$SECONDARY_FONT_COLOR: #555;
+
+$PLACEHOLDER_FONT_COLOR: #777;
+
+.font__placeholder {
+    font-size: $SMALL_FONT_SIZE;
+
+    color: $PLACEHOLDER_FONT_COLOR;
+
+    &--normal {
+        font-weight: normal;
+    }
+
+    &--bold {
+        font-size: $SMALL_FONT_SIZE;
+
+        color: $PLACEHOLDER_FONT_COLOR;
+
+        font-weight: bold;
+    }
+}
+
+.selector-font {
+    font-size: $SMALL_FONT_SIZE;
+
+    &-grey {
+
+    }
+
+    &-blue {
+
+    }
+}
+
+.font-color {
+    &--primary {
+        color: $PRIMARY_FONT_COLOR;
+    }
+
+    &--secondary {
+        color: $SECONDARY_FONT_COLOR;
+    }
+
+    &--blue {
+        color: $PRIMARY_COLOR;
+    }
+
+    &--red {
+        color: $RED_COLOR;
+    }
+
+    &--orange {
+        color: $ORANGE_COLOR;
+    }
+
+    &--yellow {
+        color: $YELLOW_COLOR;
+    }
+
+    &--green {
+        color: $GREEN_COLOR;
+    }
+
+    &--grey {
+        color: $PLACEHOLDER_FONT_COLOR;
+    }
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url("~@/assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
+

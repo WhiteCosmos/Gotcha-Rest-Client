@@ -1,0 +1,95 @@
+@import "~@/styles/rabiapi.scss";
+
+.java-name-column {
+    display: flex;
+
+    position: relative;
+
+    flex: 1;
+
+    min-height: 28px;
+
+    align-items: center;
+
+    min-width: 0;
+
+    user-select: text;
+}
+
+.java-column {
+    display: flex;
+
+    flex: 1;
+
+    min-height: 28px;
+
+    border-bottom: 1px solid #F1F1F1;
+
+    align-items: center;
+
+    min-width: 0;
+
+    user-select: text;
+}
+
+.java-special-column {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    min-height: 28px;
+
+    border-bottom: 1px solid #F1F1F1;
+
+    min-width: 0;
+}
+
+.column-on-hover {
+    background-color: #FCFCFC;
+
+    transition: background-color 72ms;
+}
+
+.arrow-indicator {
+    display: flex;
+
+    align-self: flex-end;
+
+    position: absolute;
+
+    width: 16px;
+
+    height: calc(100% - 22px);
+
+    border-left: 1px dotted #E0E0E0;
+}
+
+.indicator {
+    position: absolute;
+
+    width: 16px;
+
+    height: 100%;
+
+    //border-left: 1px dotted #E0E0E0;
+
+    &--mouse-enter {
+        border-left: 1px solid #007AFF;
+    }
+
+    &--mouse-leave {
+        border-left: 1px dotted #E0E0E0;
+    }
+}
+
+.italic-font {
+    font-size: 12px;
+
+    font-weight: lighter;
+
+    font-style: italic;
+
+    color: $PRIMARY_FONT_COLOR;
+}

@@ -1,0 +1,161 @@
+@import "rabiapi";
+
+.markdown-container {
+    max-width: 320px;
+
+    ::v-deep h1 {
+        font-size: 32px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+    }
+
+    ::v-deep h2 {
+        font-size: 28px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+    }
+
+    ::v-deep h3 {
+        font-size: 28px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+    }
+
+    ::v-deep h4 {
+        font-size: 28px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+    }
+
+    ::v-deep h5 {
+        font-size: 28px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+    }
+
+    ::v-deep p {
+        margin: 0;
+
+        padding: 0;
+
+        font-size: 11px;
+
+        color: $SECONDARY_FONT_COLOR;
+
+        font-weight: 500;
+
+        line-height: 28px;
+    }
+
+    ::v-deep ul {
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+
+        li {
+            font-size: 11px;
+
+            color: $SECONDARY_FONT_COLOR;
+
+            line-height: 28px;
+        }
+    }
+
+    ::v-deep ol {
+        margin-top: 28px;
+
+        margin-bottom: 28px;
+
+        li {
+            font-size: 11px;
+
+            color: $SECONDARY_FONT_COLOR;
+
+            line-height: 28px;
+        }
+    }
+
+    ::v-deep table {
+        border-collapse: collapse;
+
+        margin-bottom: 28px;
+
+        th {
+            background-color: #F1F1F1;
+
+            padding: 8px;
+
+            border: 1px solid #E0E0E0;
+
+            font-size: 11px;
+
+            font-weight: bolder;
+
+            color: $SECONDARY_FONT_COLOR;
+
+            line-height: 28px;
+        }
+
+        td {
+            border: 1px solid #E0E0E0;
+
+            font-size: 11px;
+
+            color: $SECONDARY_FONT_COLOR;
+
+            line-height: 28px;
+
+            word-break: break-word;
+
+            padding: 8px;
+        }
+    }
+
+    ::v-deep code {
+        display: inline-flex;
+
+        align-items: center;
+
+        padding-left: 4px;
+
+        padding-right: 4px;
+
+        margin: 0;
+
+        //width: fit-content;
+
+        font-size: 11px;
+
+        line-height: 14px;
+
+        min-height: 16px;
+
+        font-weight: bold;
+
+        color: #ff6666;
+
+        word-break: break-all;
+
+        background-color: #F1F1F1;
+    }
+}

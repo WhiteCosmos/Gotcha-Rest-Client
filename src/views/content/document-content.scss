@@ -1,0 +1,15 @@
+@import "~@/styles/rabiapi.scss";
+
+.document-container {
+    width: calc(100vw - 320px);
+
+    height: calc(100vh - 88px);
+
+    background: white;
+
+    padding: 0px 72px 0;
+
+    overflow-y: overlay; // always show
+
+    position: relative;
+}

@@ -1,0 +1,53 @@
+@import "~@/styles/rabiapi.scss";
+
+.dv-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    border-radius: 2px;
+
+    background-color: #F5F5F5;
+
+    height: 20px;
+}
+
+.dv-header {
+    display: flex;
+
+    align-content: center;
+
+    width: fit-content;
+
+    padding-left: 4px;
+
+    padding-right: 4px;
+}
+
+.dv-divider {
+    display: flex;
+
+    height: 12px;
+
+    width: 1px;
+
+    border-left: 1px solid #D8D8D8;
+}
+
+.dv-container {
+    display: flex;
+
+    align-items: center;
+
+    min-width: 0;
+
+    flex: 1;
+
+    padding-left: 4px;
+
+    padding-right: 6px;
+
+    overflow: hidden;
+}

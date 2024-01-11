@@ -1,0 +1,15 @@
+@import "~@/styles/rabiapi.scss";
+
+.ev-http-client-request-body__wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 1px;
+
+    min-height: 1px;
+
+    width: 100%;
+
+    height: calc(100% - 28px); // Menu Height
+}
